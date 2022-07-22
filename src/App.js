@@ -5,6 +5,8 @@ import NotFound from "./components/notFound/notFound";
 import Portfolio from "./components/portfolio/portfolio";
 import Contact from "./elements/contact/contact";
 import LandingPage from "./components/landingPage/landingPage";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 
 function App() {
   return (
