@@ -1,0 +1,18 @@
+@media (min-width: 650px) {
+  .portfolio {
+    height: 160vh;
+  }
+}
+
+.portfolio {
+  background-color: rgba(250, 240, 227, 255);
+  height: 100vh;
+  position: relative;
+}
+
+.portfolio-title {
+  padding-top: 14vh;
+  padding-left: 9vw;
+
+  font-weight: bold;
+}

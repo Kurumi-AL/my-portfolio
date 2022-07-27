@@ -5,7 +5,7 @@
 }
 
 .aboutMe {
-  margin-top: 2%;
+  margin-top: 2vh;
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -14,11 +14,24 @@
 
 .aboutMe-firstCol {
   height: 100vh;
-  margin-left: 5%;
   /* background-color: aqua; */
 }
 
 .aboutMe-title {
-  margin-top: 10%;
+  margin-top: 8vh;
+  margin-left: 5vw;
+}
+
+.aboutMe-title h1 {
+  /* font-size: 5vw; */
   font-weight: bold;
+}
+
+.aboutMe-content {
+  margin-top: 4vh;
+  margin-left: 7vw;
+}
+
+.aboutMe-content-info {
+  margin-top: 4vh;
 }

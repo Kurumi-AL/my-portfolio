@@ -1,0 +1,31 @@
+.modal-backdrop {
+  opacity: 0.1 !important;
+}
+
+.modal-backdrop.show {
+  opacity: 0.5 !important;
+}
+
+.btn-popup {
+  width: auto !important;
+  height: auto !important;
+  margin: 10px;
+  text-align: center;
+}
+
+.row {
+  margin-bottom: 0 !important;
+}
+
+.popup-info span b {
+  font-size: medium;
+  font-weight: bold;
+}
+
+.popup-info span {
+  font-size: 15px;
+}
+
+.popup-info .btn {
+  margin: 2px;
+}

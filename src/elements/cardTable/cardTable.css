@@ -1,0 +1,16 @@
+.cardTable {
+  position: relative;
+}
+
+.card {
+  --bs-card-height: 40vh !important;
+}
+
+.portfolio-projects {
+  width: 80% !important;
+  padding: 3vw;
+}
+
+.portfolio-project-card {
+  padding-top: 2vh;
+}

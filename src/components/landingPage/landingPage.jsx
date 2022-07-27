@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Contact from "../../elements/contact/contact";
+import ContactForm from "../../elements/contact/contactForm";
 import Navbar from "../../elements/navbar/navbar";
 import AboutMe from "../aboutMe/aboutMe";
 import Portfolio from "../portfolio/portfolio";
@@ -12,7 +12,7 @@ const LandingPage = () => {
       <Showcase />
       <AboutMe />
       <Portfolio />
-      <Contact />
+      <ContactForm />
     </React.Fragment>
   );
 };

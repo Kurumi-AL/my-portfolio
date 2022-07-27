@@ -1,0 +1,43 @@
+.footer {
+  background-color: gray;
+  height: 15vh;
+  margin-bottom: 0% !important;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.footer-copyright {
+  color: white;
+  padding-left: 10vw;
+}
+
+.span {
+  text-align: right;
+}
+
+.vertical-center {
+  min-height: 15vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.footer-icons {
+  padding-left: 10vw;
+}
+
+.footer-icons a {
+  color: white;
+}
+
+.footer-icon {
+  margin: 10px;
+}
+
+.linkedin {
+  padding-right: 10px;
+}
+
+.github {
+  padding-left: 10px;
+}
