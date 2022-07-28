@@ -15,7 +15,11 @@ const AboutMe = () => {
 
   return (
     <React.Fragment>
-      <div className="aboutMe" style={{ backgroundImage: `url(${imageUrl})` }}>
+      <div
+        id="aboutme"
+        className="aboutMe"
+        style={{ backgroundImage: `url(${imageUrl})` }}
+      >
         <Container>
           <Row className="aboutMe-row">
             <Col xs={12} md={8} className="aboutMe-firstCol">

@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
-import { Button } from "react-bootstrap";
 import emailjs from "emailjs-com";
 
 import "./contactForm.css";
@@ -15,6 +14,7 @@ const ContactForm = () => {
   } = useForm();
 
   const onSubmit = async (data) => {
+    console.log("onSubmit");
     const { name, email, subject, message } = data;
 
     try {
@@ -40,7 +40,7 @@ const ContactForm = () => {
 
   return (
     <React.Fragment>
-      <div className="contact">
+      <div className="contact" id="contact">
         <div className="contact-title">
           <h1>Contact</h1>
         </div>
@@ -143,15 +143,19 @@ const ContactForm = () => {
                       </div>
                     </div>
 
-                    <Button
-                      type="submit"
+                    <button className="submit-btn" type="submit">
+                      Submit
+                    </button>
+                    {/* <Button
+                      // type="submit"
+                      onClick={onSubmit}
                       className="submit-btn"
                       target="_blank"
                       rel="noopener noreferrer"
                       variant="secondary"
                     >
                       Submit
-                    </Button>
+                    </Button> */}
                   </form>
                 </div>
               </div>

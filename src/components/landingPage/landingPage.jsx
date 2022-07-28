@@ -1,18 +1,22 @@
 import React, { useState, useEffect } from "react";
 import ContactForm from "../../elements/contact/contactForm";
-import Navbar from "../../elements/navbar/navbar";
+import ReactNavbar from "../../elements/navbar/reactNavbar";
 import AboutMe from "../aboutMe/aboutMe";
 import Portfolio from "../portfolio/portfolio";
 import Showcase from "../showcase/showcase";
+import BackToTopButton from "../../elements/backToTopButton/backToTopButton";
 
 const LandingPage = () => {
   return (
     <React.Fragment>
-      <Navbar />
-      <Showcase />
-      <AboutMe />
-      <Portfolio />
-      <ContactForm />
+      <div>
+        <ReactNavbar />
+        <Showcase />
+        <AboutMe />
+        <Portfolio />
+        <ContactForm />
+        <BackToTopButton />
+      </div>
     </React.Fragment>
   );
 };
