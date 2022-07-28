@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from "react";
+import { getProjects } from "./../../firebase/projectService";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import tasksImage from "./img/tasks01.png";
 import Popup from "./../popup/popup";
+import Aos from "aos";
+
 import "./cardTable.css";
-import { getProjects } from "./../../firebase/projectService";
+import "aos/dist/aos.css";
 
 const CardTable = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -16,9 +19,15 @@ const CardTable = () => {
   useEffect(() => {
     async function fetchData() {
       const projects = await getProjects();
+      projects.sort((a, b) => {
+        return b.id - a.id;
+      });
       setProjects(projects);
     }
     fetchData();
+
+    Aos.init({ duration: 1000 });
+    Aos.refresh();
   }, []);
 
   const toggleModal = (project) => {
@@ -30,9 +39,14 @@ const CardTable = () => {
   return (
     <Container className="portfolio-projects">
       <Row>
-        {projects.map((project) => (
-          <Col md key={project.title} className="portfolio-project-card">
-            <Card onClick={() => toggleModal(project)}>
+        {projects.map((project, index) => (
+          <Col
+            md
+            key={project.title}
+            className="portfolio-project-card"
+            data-aos="flip-left"
+          >
+            <Card onClick={() => toggleModal(project)} className="hvr-grow">
               <Card.Img variant="top" src={project.img} />
               <Card.Body>
                 <Card.Title>{project.title}</Card.Title>

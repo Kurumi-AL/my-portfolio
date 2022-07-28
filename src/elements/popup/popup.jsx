@@ -41,7 +41,7 @@ function Popup({ show, selectedItem, onClose }) {
                 <br />
                 <span>
                   <b>Used skills: </b>
-                  {selectedItem.tools.map((skill) => (
+                  {selectedItem.skills.map((skill) => (
                     <Chip label={skill} variant="outlined" size="small" />
                   ))}
                 </span>

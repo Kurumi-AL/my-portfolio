@@ -30,5 +30,21 @@
 }
 
 .submit-btn {
+  background-color: rgb(173, 173, 173);
+  color: white;
   margin: 20px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.submit-btn:hover {
+  background-color: gray;
+}
+
+.errorMessage {
+  color: red;
 }

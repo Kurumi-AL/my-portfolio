@@ -8,22 +8,22 @@
 
 .footer-copyright {
   color: white;
-  padding-left: 10vw;
+  padding-left: 4vw;
 }
 
 .span {
-  text-align: right;
+  text-align: left;
 }
 
 .vertical-center {
-  min-height: 15vh; /* These two lines are counted as one :-)       */
+  min-height: 15vh;
 
   display: flex;
   align-items: center;
 }
 
 .footer-icons {
-  padding-left: 10vw;
+  padding-left: 5vw;
 }
 
 .footer-icons a {
@@ -31,13 +31,39 @@
 }
 
 .footer-icon {
-  margin: 10px;
+  margin: 5px;
 }
 
 .linkedin {
-  padding-right: 10px;
+  padding-left: 20px;
 }
 
 .github {
   padding-left: 10px;
+}
+
+@media (min-width: 650px) {
+  .span {
+    text-align: right;
+  }
+
+  .footer-copyright {
+    padding-left: 10vw;
+  }
+
+  .footer-icons {
+    padding-left: 10vw;
+  }
+
+  .footer-icon {
+    margin: 10px;
+  }
+
+  .linkedin {
+    padding-right: 10px;
+  }
+
+  .github {
+    padding-left: 10px;
+  }
 }

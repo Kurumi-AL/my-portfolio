@@ -6,12 +6,18 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import desktopImage from "./aboutMe_background_desktop.png";
 import mobileImage from "./aboutMe_background_mobile.png";
-import KurumiResume from "./Kurumi-Resume.pdf";
+import Aos from "aos";
 
 import "./aboutMe.css";
+import "aos/dist/aos.css";
 
 const AboutMe = () => {
   const imageUrl = useWindowWidth() >= 650 ? desktopImage : mobileImage;
+
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+    Aos.refresh();
+  }, []);
 
   return (
     <React.Fragment>
@@ -22,7 +28,12 @@ const AboutMe = () => {
       >
         <Container>
           <Row className="aboutMe-row">
-            <Col xs={12} md={8} className="aboutMe-firstCol">
+            <Col
+              xs={12}
+              md={8}
+              className="aboutMe-firstCol"
+              data-aos="fade-right"
+            >
               <div className="aboutMe-title">
                 <h1>About Me</h1>
               </div>
