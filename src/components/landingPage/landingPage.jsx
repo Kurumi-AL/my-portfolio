@@ -24,6 +24,7 @@ const LandingPage = () => {
 export const useWindowWidth = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
+  // Check the window size
   useEffect(() => {
     const handleWindowResize = () => {
       setWindowWidth(window.innerWidth);

@@ -1,16 +1,18 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 
-const BootstrapCarousel = () => {
+import "./bootstrapCarousel.css";
+
+const BootstrapCarousel = ({ selectedProject }) => {
   return (
     <div>
       <div className="container-fluid">
-        <Carousel>
+        <Carousel className="pictures">
           <Carousel.Item style={{ height: "250px" }}>
             <img
               style={{ height: "250px" }}
               className="d-block w-100"
-              src="/images/img02.jpg"
+              src={selectedProject.img[0]}
             />
           </Carousel.Item>
 
@@ -18,7 +20,7 @@ const BootstrapCarousel = () => {
             <img
               style={{ height: "250px" }}
               className="d-block w-100"
-              src={"/images/img01.jpg"}
+              src={selectedProject.img[1]}
             />
           </Carousel.Item>
 
@@ -26,7 +28,7 @@ const BootstrapCarousel = () => {
             <img
               style={{ height: "250px" }}
               className="d-block w-100"
-              src={"/images/img03.jpg"}
+              src={selectedProject.img[2]}
             />
           </Carousel.Item>
         </Carousel>

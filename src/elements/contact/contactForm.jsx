@@ -31,6 +31,7 @@ const ContactForm = () => {
       reset();
       toast.success("Message sent successfully!");
     } catch (e) {
+      toast.error("Sorry! Try again!");
       console.log(e);
     }
   };

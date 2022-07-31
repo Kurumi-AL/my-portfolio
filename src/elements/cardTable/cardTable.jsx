@@ -4,7 +4,6 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
-import tasksImage from "./img/tasks01.png";
 import Popup from "./../popup/popup";
 import Aos from "aos";
 
@@ -16,6 +15,7 @@ const CardTable = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   const [projects, setProjects] = useState([]);
 
+  // Get data from Firestore
   useEffect(() => {
     async function fetchData() {
       const projects = await getProjects();
@@ -30,8 +30,8 @@ const CardTable = () => {
     Aos.refresh();
   }, []);
 
+  // Change the status of modalOpen
   const toggleModal = (project) => {
-    console.log("toggleModal was called: ", project);
     setModalOpen(!modalOpen);
     setSelectedProject(project);
   };
@@ -39,7 +39,7 @@ const CardTable = () => {
   return (
     <Container className="portfolio-projects">
       <Row>
-        {projects.map((project, index) => (
+        {projects.map((project) => (
           <Col
             md
             key={project.title}
@@ -47,7 +47,7 @@ const CardTable = () => {
             data-aos="flip-left"
           >
             <Card onClick={() => toggleModal(project)} className="hvr-grow">
-              <Card.Img variant="top" src={project.img} />
+              <Card.Img variant="top" src={project.img[1]} />
               <Card.Body>
                 <Card.Title>{project.title}</Card.Title>
                 <Card.Text>{project.short_description}</Card.Text>

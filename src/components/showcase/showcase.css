@@ -2,6 +2,7 @@
   background-color: rgba(250, 240, 227, 255);
   height: 100vh;
   position: relative;
+  padding-top: 5vh;
 }
 
 .showcase img {
@@ -9,7 +10,7 @@
 }
 
 .showcase_row {
-  margin-top: 8vh !important;
+  margin-top: 5vh !important;
   padding-top: 10vh !important;
   text-align: center;
   align-items: center;

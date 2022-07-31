@@ -4,16 +4,14 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Chip from "@mui/material/Chip";
-import "./popup.css";
 import BootstrapCarousel from "../carousel/bootstrapCarousel";
+import "./popup.css";
 
 function Popup({ show, selectedItem, onClose }) {
-  console.log("Popup: ", selectedItem);
   if (!selectedItem) return;
 
   return (
     <Modal
-      // {...props}
       show={show}
       onHide={onClose}
       size="lg"
@@ -30,7 +28,7 @@ function Popup({ show, selectedItem, onClose }) {
         <Container>
           <Row>
             <Col sm>
-              <BootstrapCarousel />
+              <BootstrapCarousel selectedProject={selectedItem} />
             </Col>
             <Col sm>
               <div className="popup-info">

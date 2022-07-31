@@ -57,10 +57,6 @@ const ReactNavbar = () => {
                 Contact
               </Link>
             </li>
-
-            {/* <Nav.Link href="#aboutme">About Me</Nav.Link>
-            <Nav.Link href="#portfolio">Portfolio</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link> */}
           </Nav>
         </Navbar.Collapse>
       </Container>

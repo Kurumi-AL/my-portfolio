@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import CardTable from "../../elements/cardTable/cardTable";
 
 import "./portfolio.css";
