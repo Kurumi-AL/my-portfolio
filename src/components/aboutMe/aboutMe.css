@@ -14,7 +14,6 @@
 
 .aboutMe-firstCol {
   height: 100vh;
-  /* background-color: aqua; */
 }
 
 .aboutMe-title {
@@ -23,7 +22,6 @@
 }
 
 .aboutMe-title h1 {
-  /* font-size: 5vw; */
   font-weight: bold;
 }
 

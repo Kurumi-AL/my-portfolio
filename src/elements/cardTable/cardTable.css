@@ -3,7 +3,7 @@
 }
 
 .card {
-  --bs-card-height: 40vh !important;
+  --bs-card-height: 43vh !important;
 }
 
 .portfolio-projects {
@@ -13,6 +13,10 @@
 
 .portfolio-project-card {
   padding-top: 2vh;
+}
+
+.card-title {
+  font-weight: bold !important;
 }
 
 /* Grow */

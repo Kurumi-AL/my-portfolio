@@ -33,14 +33,19 @@ function Popup({ show, selectedItem, onClose }) {
             <Col sm>
               <div className="popup-info">
                 <span>
-                  <b>What is this for: </b>
+                  <b>Purpose: </b>
                   {selectedItem.description}
                 </span>
                 <br />
                 <span>
                   <b>Used skills: </b>
                   {selectedItem.skills.map((skill) => (
-                    <Chip label={skill} variant="outlined" size="small" />
+                    <Chip
+                      className="chip"
+                      label={skill}
+                      variant="outlined"
+                      size="small"
+                    />
                   ))}
                 </span>
                 <br />

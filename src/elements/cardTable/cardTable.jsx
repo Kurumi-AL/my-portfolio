@@ -49,7 +49,7 @@ const CardTable = () => {
             <Card onClick={() => toggleModal(project)} className="hvr-grow">
               <Card.Img variant="top" src={project.img[1]} />
               <Card.Body>
-                <Card.Title>{project.title}</Card.Title>
+                <Card.Title className="card-title">{project.title}</Card.Title>
                 <Card.Text>{project.short_description}</Card.Text>
               </Card.Body>
             </Card>
