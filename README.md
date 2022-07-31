@@ -11,7 +11,7 @@ My personal portfolio created with React.js and Firebase.
 
 ## Demo
 
-[Portfolio](https://kurumialawrence.web.app/)
+[Portfolio](https://my-portfolio-f4066.firebaseapp.com/)
 
 ## General info
 
