@@ -24,6 +24,7 @@ I wanted to summarize my personal projects on one page, and I also wanted to pra
 - Bootstrap (react-bootstrap, bootstrap)
 - HTML
 - CSS
+- JavaScript
 - EmailJS
 
 ## Setup
