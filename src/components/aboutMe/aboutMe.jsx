@@ -45,12 +45,12 @@ const AboutMe = () => {
                   time.
                 </h5>
                 <h5 className="aboutMe-content-info">
-                  <b>Education:</b> Bachelor's in Computer Science at Brigham
-                  Young University (class of 2023)
+                  <b>Education:</b> BS in Computer Science at Brigham Young
+                  University (class of 2023)
                 </h5>
                 <h5 className="aboutMe-content-info">
-                  <b>Skills:</b> React.js, Firebase, HTML, CSS, Bootstrap,
-                  JavaScript, Java
+                  <b>Proficient Skills:</b> React.js, Firebase, HTML, CSS,
+                  Bootstrap, JavaScript, Java
                 </h5>
                 <h5 className="aboutMe-content-info">
                   <b>Activities:</b> Women in STEM, Women in Computer Science
